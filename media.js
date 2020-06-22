@@ -73,8 +73,6 @@
 // ==/UserScript==
 
 
-alert("abc");
-
 function loadedCB () {
   completes++
   if (completes === 3) {
