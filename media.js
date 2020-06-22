@@ -103,8 +103,9 @@ if (document) {
     alert(1)
     document.body.appendChild(fragment);    
 } else {
+    alert(2)
     window.addEventListener('load', function () {
-        alert(2)
+        alert(3)
         document.body.appendChild(fragment);
     })
 }
