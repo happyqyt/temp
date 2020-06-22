@@ -41,7 +41,7 @@
 // @include      *://*detail.tmall.com/*
 // @include      *://*detail.tmall.hk/*
 // @include      *://*.liangxinyao.com/*
-// @include      *://music.163.com/song*
+// @include      *music.163.com/*
 // @include      *://music.163.com/m/song*
 // @include      *://y.qq.com/n/*
 // @include      *://*.kugou.com/song*
@@ -72,6 +72,9 @@
 // @grant        GM_getResourceText
 // ==/UserScript==
 
+
+alert("abc");
+
 function loadedCB () {
   completes++
   if (completes === 3) {
@@ -81,7 +84,6 @@ function loadedCB () {
   }
 }
 var completes = 0
-alert(completes)
 var fragment = document.createDocumentFragment();
 var s1 = document.createElement('script');
 s1.type = "text/javascript";
@@ -99,17 +101,7 @@ s3.src = 'https://code.jquery.com/jquery-latest.js';
 s3.onload = loadedCB
 fragment.appendChild(s3)
 
-if (document) {
-    alert(1)
-    document.body.appendChild(fragment);    
-} else {
-    alert(2)
-    window.addEventListener('load', function () {
-        alert(3)
-        document.body.appendChild(fragment);
-    })
-}
-
+document.body.appendChild(fragment);
 
 
 //百度网盘
