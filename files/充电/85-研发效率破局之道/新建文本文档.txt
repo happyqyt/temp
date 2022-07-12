@@ -1,0 +1,1 @@
+管理学大师彼得 · 德鲁克（Peter Drucker）曾经说过，“一个事务，你如果无法度量它，就无法管理它”（If you can’t measure it, you can’t manage it）。要想提高研发效能，自然要首先解决效能的度量的问题。
